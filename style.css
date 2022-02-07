@@ -1,0 +1,64 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+:root{
+    --shadow-1 : 0 .5rem 1rem rgba(0,0,0,.15);
+    --shadow-2 : 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow-3 : 0 1rem 3rem rgba(0,0,0,.175);
+}
+a,
+a:hover{
+    text-decoration: none;
+    color: #000;
+
+}
+li{
+    list-style: none;
+}
+
+
+.samad-tab{
+    width: 600px;
+    background-color: #fff;
+    box-shadow: var(--shadow-3);
+    padding: 15px;
+}
+
+.samad-tab-menu ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.samad-tab-menu ul li{
+    display: block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.samad-tab-menu ul li a{
+    display: block;
+    color: #333;
+    border-bottom: 1px solid rgb(139, 137, 137);
+    text-align: center;
+}
+
+.samad-tab-menu ul li a.active{
+    border-bottom: none;
+    border-left: 1px solid rgb(139, 137, 137);
+    border-right: 1px solid rgb(139, 137, 137);
+    border-top: 1px solid rgb(139, 137, 137);
+    border-left: 1px solid rgb(139, 137, 137);
+    border-radius: 5px 5px 0 0 ;
+}
+.samad-tab-pane{
+    display: none;
+}
+.samad-tab-pane.active{
+
+    display: block;
+}
