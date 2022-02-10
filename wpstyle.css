@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a,
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+li{
+    list-style: none;
+}
+
+.top-menu-img{
+    width: 30px;
+}
+.wp-top-menu{
+    background-color: #1d2327;
+    width: 160px;
+}
+.wp-top-menu ul li a span{
+    color: #9ca2a7;
+    margin-right: 10px;
+}
+.wp-top-menu ul li{
+
+}
+.wp-top-menu ul li a{
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 8px 0;
+}
+.wp-top-menu ul li{
+    padding: 0;
+}
+
+.wp-top-menu ul li a::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 11px 11px 0;
+    border-color: transparent #fff transparent transparent;
+    display: none;
+}
+
+.wp-top-menu ul li a.arrow-active::after{
+    display: block;
+}
+.sticky{
+    position: sticky;
+    top: 35px;
+    left: -16px;
+}
+.wp-tab-pane{
+display: none;
+}
+
+.wp-tab-pane.arrow-active{
+    display: block;
+}
+.divi-save button{
+    background-color: #00c3aa;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.theme-header{
+    width: 100%;
+    border-radius: 10px;
+  
+}
+.divi_thme-option{
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%); 
+}
+.theme-header-top{
+    width: 100%;
+    background-color: #6c2eb9;
+    padding:10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius:4px 4px 0 0 ;
+}
+.theme-header-top img{
+    width: 40px;
+    color: #fff;
+}
+
+.theme-header-top h2{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.theme-header-bottom{
+    background-color: #7e3bd0;
+    width: 100%;
+    height: 38px;
+}
+.theme-header-bottom ul{
+    display: flex;
+    padding-left: 0;
+}
+.theme-header-bottom ul li a{
+    color: #fff;
+    padding: 12px 28px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.theme-header-bottom ul li a.active2{
+    background-color: #8f42ed;
+    color: #fff;
+    padding: 12px 28px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 38px;
+}
+
+.reset-butto{
+    width: 100px;
+    text-align: center;
+
+}
+.reset-butto span{
+    width: 20px;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 15px;
+}
+.reset-butto span:nth-child(1){
+    position: relative;
+}
+.reset-butto span:nth-child(1)::after{
+    content: "\f362";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    width: 20px;
+    height: auto;
+    top: 0;
+    left: -30px;
+    color: #fff;
+    transform: rotate(89deg);
+    font-size: 15px;
+}
+/* .reset-butto span:nth-child(2){
+    position: relative;
+    width: 20px;
+    transform: rotate(180deg);
+} */
+.theme-tabs-body ul{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F5F9;
+}
+.theme-tabs-body ul li a{
+    color:  #8E969E;
+    padding: 15px 26px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.gemeral-content h4{
+    word-wrap: break-word;
+    font-size: 15px;
+    font-weight: 500;
+    color: #32373c;
+}
+
+.gbutton{
+    background-color: #4c5866;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    width: 150px;
+    padding: 3px 0;
+    margin-right: 25px;
+    border-radius: 3px;
+    outline: none;
+}
+.g-content-2-2{
+    background-color: #008bdb;
+    width: 188px;
+    border-radius: 4px;
+}
+.g-content-2-2 button{
+    color: #fff;
+    border: none;
+    width: 80px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.g-content-2-2 span{
+    position: relative;
+}
+.g-content-2-2 span::after{
+    content: "";
+    width: 90px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* color: #8E969E;
+    padding: 15px 26px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+    display: inline-block; */
+.navi-header ul{
+    display: flex;
+}
+#general ul li a.active1{
+background-color: #fff;
+}
+.navi-header ul li a.active1{
+    background-color: #fff;
+}
+.navi-con-1-1 h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navi-con-1-2 ul{
+    background-color: #fff;
+}
+.navi-con-1-2{
+    background-color: #fff;
+}
+
+.navi-con-nemu ul li a{
+    color: #4c5866;
+    font-size: 13px;
+    font-weight: 600;
+    user-select: none;
+    padding: 14px 45px;
+    position: relative;
+
+}
+.navi-con-nemu ul li a::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: #00C3AA;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+
+.navi-con-butt{
+    background-color: #008bdb;
+    width: 188px;
+    border-radius: 4px;
+}
+
+.navi-con-butt button{
+    color: #fff;
+    border: none;
+    width: 80px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+    outline: none;
+}
+.navi-con-butt span{
+    position: relative;
+}
+.navi-con-butt span::after{
+    content: "";
+    width: 90px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.navi-contant-1-1 h4{
+    font-size: 15px;
+    font-weight: 600
+}
+.buil-menu ul{
+    display: flex;
+}
+
+.h4 h4{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.wp-tab-body-conta{
+    display: none;
+}
+
+.wp-tab-body-conta.active{
+    display: block;
+}
+.divfor-pages{
+    display: none;
+}
+.divfor-pages.active3{
+    display: block;
+}
+
+.buil-menu ul li a.active4{
+    background-color: #fff;
+}
+
+.buil-con-integra{
+    display: none;
+}
+.buil-con-integra.active5{
+    display: block;
+}
+
+.reset-pupap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.77);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s .2s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+.reset-pupap.activee{
+    opacity: 1;
+    pointer-events: auto;
+}
+.reset-contant{
+    width: 400px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.res-con-hea-top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6c2eb9;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px 4px 0 0;
+    
+}
+.reset-pupap .closee{
+    color: #ffff;
+    outline: none;
+    cursor: pointer;
+
+}
+.res-con-hea-bottom{
+background-color: #7e3bd0;
+}
+.res-con-hea-bottom ul{
+    display: flex;
+}
+.res-con-hea-bottom ul li a{
+    padding: 8px 15px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+.reset-con-footer{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.reset-con-footer h5{
+    width: 359px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4c5866;
+    margin: auto;
+    margin-top: 30px;
+}
+.export-butt{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    margin-top: 16px;
+    background-color: #008bda;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 0 0 4px 4px;
+    color: #fff;
+}

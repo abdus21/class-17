@@ -23,7 +23,7 @@ samad_tab_menu.forEach(atag =>{
 
 
 
-        let tabpane = document.querySelector(this.getAttribute('href'));
+        const tabpane = document.querySelector(this.getAttribute('href'));
         tabpane.classList.add('active')
         
     })
