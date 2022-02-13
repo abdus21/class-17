@@ -78,10 +78,16 @@ function result_show(){
              <td>A</td>
              <td>4.6</td>
              <td><img style="width:50px;height:50px;object-fit:cover" src="${data.Photo}" alt=""></td>
-             <td><button class="btn btn-info btn-sm">View</button></td>
-             <td><button class="btn btn-danger btn-sm">Delete</button></td>
+             <td><button id="view" class="btn btn-info btn-sm">View</button></td>
+             <td><button id="delete" class="btn btn-danger btn-sm">Delete</button></td>
       </tr>
         `;
     });
     all_list.innerHTML = dataa
-}
+};
+
+const delete_data = document.getElementById('delete');
+
+delete_data.addEventListener('click', function(){
+    
+})
