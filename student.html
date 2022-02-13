@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student result</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg" style="width:21rem; padding: 10px;">
+                    <div class="card-header mb-2">
+                        <h3>Add New Student</h3>
+                        <h5 id="alert"></h5>
+                    </div>
+                    <form id="student_form">
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Student Name" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Roll Numder" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Class" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Photo" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input name="gender" id="Male" value="Male" type="radio">
+                            <label for="Male">Male</label>
+                            <input name="gender" id="Female" value="Female" type="radio">
+                            <label for="Female">Female</label>
+                        </div>
+                        marks
+                        <hr>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Bangla" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="English" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Math" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Science" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Social Science" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" placeholder="Religion" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="submit" value="Add new student" class="btn btn-primary form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Roll</th>
+                                    <th>Class</th>
+                                    <th>Gender</th>
+                                    <th>Grade</th>
+                                    <th>CGPA</th>
+                                    <th>Photo</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody class="all_list">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<script src="function.js"></script>
+<script src="student.js"></script>
+
+</body>
+</html>
