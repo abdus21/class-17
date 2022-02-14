@@ -77,7 +77,7 @@ function result_show(){
              <td>A</td>
              <td>4.6</td>
              <td><img style="width:50px;height:50px;object-fit:cover" src="${data.Photo}" alt=""></td>
-             <td><button id="student-moda" class="btn btn-info btn-sm" onclick="calculat_result(${index})">View</button></td>
+             <td><button class="btn btn-info btn-sm" onclick="calculat_result(${index})">View</button></td>
              <td><button id="delete" onclick="delet(${index})" class="btn btn-danger btn-sm">Delete</button></td>
       </tr>
         `;
@@ -102,26 +102,29 @@ function delet(index){
 
 }
 
-const student_moda = document.getElementById('student-moda');
+const student_moda = document.querySelector('.student-moda');
 const samad_modal = document.querySelector('.samad-modal');
 const data_show = document.querySelector('.data_show');
 
 student_moda.addEventListener('click', function(e){
 
-    samad_modal.style.display = 'flex';
-    samad_modal.nextElementSibling.classList.add('active');
+
 
 });
 
-samad_modal.addEventListener('click', function(e){
-    if(e.target == this){
-        samad_modal.style.display = 'none';
-    }else{
-        samad_modal.style.display = 'flex';
-    }
-})
+
 
 function calculat_result(index){
+    samad_modal.style.display = 'flex';
+    samad_modal.nextElementSibling.classList.add('active');
+
+    samad_modal.addEventListener('click', function(e){
+        if(e.target == this){
+            samad_modal.style.display = 'none';
+        }else{
+            samad_modal.style.display = 'flex';
+        }
+    })
     let resive_data = data_get('result');
     //let data = '';
     resive_data.map(data =>{
